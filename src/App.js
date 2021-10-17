@@ -6,6 +6,7 @@ import About from './Components/About/About';
 import NotFound from './Components/NotFound/NotFound';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
+import FriendDetail from './Components/FriendDetail/FriendDetail';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/Friends">
             <Friends></Friends>
+          </Route>
+          <Route path="/Friend/:FriendId">
+            <FriendDetail></FriendDetail>
           </Route>
           <Route path="/About">
             <About></About>

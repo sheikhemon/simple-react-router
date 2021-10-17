@@ -11,3 +11,6 @@
 # Link or NavLink
     * <Link to="/about">About</Link>
     * <NavLink to="/faq" activeClassName="selected">FAQs</NavLink> //-- Use navLink with styles
+
+# Route fixed and variable
+    * route name + : + any parameter

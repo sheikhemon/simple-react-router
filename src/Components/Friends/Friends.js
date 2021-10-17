@@ -14,7 +14,7 @@ const Friends = () => {
             <div className="frineds-container">
                 {
                     friends.map(friend => <Friend
-                        key="id"
+                        key={friend.id}
                         friend={friend}
                     ></Friend>)
                 }
