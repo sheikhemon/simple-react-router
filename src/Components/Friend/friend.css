@@ -1,0 +1,8 @@
+.single-friend {
+    transition: all .3s linear;
+}
+
+.single-friend:hover {
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
