@@ -7,3 +7,7 @@
 4. path 
 5. component path
 6. exact - hidden slash
+
+# Link or NavLink
+* <Link to="/about">About</Link>
+* <NavLink to="/faq" activeClassName="selected">FAQs</NavLink> //-- Use navLink with styles
