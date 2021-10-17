@@ -7,6 +7,7 @@ import NotFound from './Components/NotFound/NotFound';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import FriendDetail from './Components/FriendDetail/FriendDetail';
+import Culture from './Components/Culture/Culture';
 
 function App() {
   return (
@@ -17,17 +18,20 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route path="/Home">
+          <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/Friends">
+          <Route path="/friends">
             <Friends></Friends>
           </Route>
-          <Route path="/Friend/:FriendId">
+          <Route path="/friend/:friendId">
             <FriendDetail></FriendDetail>
           </Route>
-          <Route path="/About">
+          <Route exact path="/about">
             <About></About>
+          </Route>
+          <Route exact path="/about/culture">
+            <Culture></Culture>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
